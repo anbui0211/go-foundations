@@ -1,4 +1,4 @@
-package todo
+package channel
 
 func swap(arr []int) {
 	for i := 0; i < len(arr)-1; i++ {

@@ -1,4 +1,4 @@
-package todo
+package channel
 
 import (
 	"fmt"
