@@ -85,3 +85,7 @@ func worker(workerId int, jobs <-chan Employee, results chan<- SalaryAgeRatio) {
 		}
 	}
 }
+
+
+
+
