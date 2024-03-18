@@ -13,6 +13,8 @@ require (
 	github.com/segmentio/ksuid v1.0.4
 	github.com/shopspring/decimal v1.3.1
 	github.com/sony/sonyflake v1.2.0
+	golang.org/x/text v0.14.0
+	golang.org/x/time v0.5.0
 )
 
 require (

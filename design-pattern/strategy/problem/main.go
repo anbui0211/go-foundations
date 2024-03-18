@@ -3,13 +3,10 @@ package strategy
 import "fmt"
 
 func main() {
-
 	s := NotificationService{
 		notifierType: "sms",
 	}
-
 	s.SendNotification("hello world")
-
 }
 
 type NotificationService struct {
