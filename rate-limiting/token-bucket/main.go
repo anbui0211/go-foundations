@@ -1,4 +1,4 @@
-package ratelimit
+package ratelimittokenbuket
 
 import (
 	"encoding/json"
@@ -32,4 +32,3 @@ func Main() {
 	}
 }
 
-// for i
