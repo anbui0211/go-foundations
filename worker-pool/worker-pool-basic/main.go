@@ -1,4 +1,4 @@
-package main
+package workerpool_basic
 
 import (
 	"fmt"
@@ -17,7 +17,7 @@ func StartSender(name string) <-chan string {
 
 	return c
 }
-func main() {
+func Main() {
 	result := StartSender("An")
 	for i := 0; i < 5; i++ {
 		fmt.Println(<-result)
