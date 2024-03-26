@@ -1,0 +1,6 @@
+- Trong Golang, các biến có thể được lưu ở một trong 2 vùng nhớ Stack hoặc Heep
+- Phân biệt Stack và Heep
+  - Stack: vùng nhớ liên tiếp nhau được tổ chức theo cấu trúc LIFO để chứa các biến của 1 Goroutine nào đó, mỗi Goroutine có 1 stack riêng
+  - Heep: vùng nhớ được chia sẻ chung giữa tất cả Goroutine trong 1 chương trình
+- Cấp phát bộ nhớ là gì?
+  - Là trong quá trình chạy, khi cần lưu trữ giá trj cho các biến, chương trình cần quyết định xem các biến đó có thể đặt ở đâu trong Ram, quá trình tìm vùng nhớ phù hợp để đặt dữ liệu này gọi là cấp phát bộ nhớ

@@ -33,11 +33,12 @@ func Main() {
 		Body:   "The API is at capacity, try again later.",
 	}
 
-	// Convert struct to json
-	jsonMessage,_:= json.Marshal(message)
-	tlbthLimiter:= tollbooth.NewLimiter(1, nil )
+	jsonMessage, _ := json.Marshal(message)
+
+	tlbthLimiter := tollbooth.NewLimiter(1, nil) // giới hạn là 1 request mỗi giây
 	tlbthLimiter.SetMessageContentType("application/json")
 	tlbthLimiter.SetMessage(string(jsonMessage))
+
 	http.Handle("/ping", tollbooth.LimitFuncHandler(tlbthLimiter, endpointHandler))
 
 	// start server
