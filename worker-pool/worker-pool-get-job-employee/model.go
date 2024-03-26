@@ -1,4 +1,4 @@
-package worker
+package workerpool_getjobemployee
 
 type EmployeeResponse struct {
 	Status  string     `json:"status"`

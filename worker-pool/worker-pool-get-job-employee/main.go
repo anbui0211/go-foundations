@@ -1,4 +1,4 @@
-package worker
+package workerpool_getjobemployee
 
 import (
 	"encoding/json"
