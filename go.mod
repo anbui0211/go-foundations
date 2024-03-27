@@ -1,4 +1,4 @@
-module gobase
+module gofundations
 
 go 1.20
 
